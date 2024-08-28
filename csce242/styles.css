@@ -21,5 +21,8 @@ body {
 }
 #assignments_list a {
     text-decoration:none;
+    color:black;
+}
+#assignments_list a:hover {
     color:#8458B3;
 }
