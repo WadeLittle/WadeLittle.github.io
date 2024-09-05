@@ -1,3 +1,5 @@
+
+
 body {
   background: #8697c4;
   color-scheme: dark;
@@ -48,6 +50,28 @@ header {
 }
 #assignments_list a:hover {
   color: #8458b3;
+}
+/* Projects */
+#projects {
+  color: #003135;
+  text-align: center;
+}
+#projects-div section {
+  background: #ede8f5;
+  margin: 10px;
+}
+#projects-div h2 {
+  text-align: center;
+}
+#projects-div img {
+  display: block;
+  margin: auto;
+}
+#projects-div p {
+  text-align: center;
+}
+#projects-div a {
+  color: black;
 }
 
 /* Apply to 600px and larger */
