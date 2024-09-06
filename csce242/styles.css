@@ -56,21 +56,21 @@ header {
   color: #003135;
   text-align: center;
 }
-#projects-div section {
+#project-div section {
   background: #ede8f5;
   margin: 10px;
 }
-#projects-div h2 {
+#project-div h2 {
   text-align: center;
 }
-#projects-div img {
+#project-div img {
   display: block;
   margin: auto;
 }
-#projects-div p {
+#project-div p {
   text-align: center;
 }
-#projects-div a {
+#project-div a {
   color: black;
 }
 
