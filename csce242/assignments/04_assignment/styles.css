@@ -19,10 +19,12 @@ body {
   padding-bottom: 20px;
   margin: 0;
 }
+
 #heading-img {
   margin: 5px;
   margin-left: 20px;
 }
+
 #search-box {
   position: absolute;
   top: 25%;
@@ -32,6 +34,7 @@ body {
   border-style: solid;
   white-space: nowrap;
 }
+
 #search-box h2 {
   color: white;
   font-size: medium;
@@ -47,23 +50,28 @@ body {
   flex: 1;
   display: flex;
 }
+
 #gateways-header-list {
   padding: 0;
   margin: 0;
 }
+
 #gateways-header-list li {
   list-style-type: none;
   color: white;
   padding-right: 15px;
 }
+
 #gateways-header-list strong {
   font-size: 10px;
 }
+
 #gateways-header-list a {
   text-decoration: none;
   color: white;
   font-size: 10px;
 }
+
 #gateways-header-list a:hover {
   background-color: red;
 }
@@ -83,18 +91,21 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 #top-right-nav-list {
   /* display: flex; */
   padding: 0;
   margin: 0;
   padding-right: 35px;
 }
+
 #top-right-nav-list li {
   position: relative;
   list-style-type: none;
   color: white;
   padding-right: 15px;
 }
+
 #top-right-nav-list li::after {
   content: "|";
   position: absolute;
@@ -103,17 +114,21 @@ body {
   top: 25%;
   font-size: 10px;
 }
+
 #top-right-nav-list li:last-child::after {
   content: "";
 }
+
 #heading-menu a {
   text-decoration: none;
   color: white;
   font-size: 10px;
 }
+
 #heading-menu a:hover {
   background-color: red;
 }
+
 #menu-icon {
   margin: 5px;
 }
@@ -127,24 +142,29 @@ body {
   padding-right: 15%;
   display: block;
 }
+
 #main-menu ul {
   margin: auto;
   justify-content: center;
 }
+
 #main-menu li {
   list-style-type: none;
   color: white;
   padding: 15px;
 }
+
 #main-menu li:hover {
   background-color: #570008;
 }
+
 #main-menu a,
 strong {
   text-decoration: none;
   color: white;
   font-size: 15px;
 }
+
 #main-menu a:hover {
   background-color: red;
 }
@@ -160,24 +180,29 @@ strong {
   background-color: white;
   text-align: center;
 }
+
 #graduate-school-admissions {
   display: flex;
   width: fit-content;
   padding: 5px;
 }
+
 #graduate-school-admissions section {
   width: 70%;
   margin: auto;
 }
+
 #graduate-school-admissions h1 {
   padding: 1px;
 }
+
 #second-content h3 {
   padding-left: 10%;
   padding-right: 10%;
   margin: auto;
   padding-bottom: 20px;
 }
+
 #second-content p {
   padding-left: 10%;
   padding-right: 10%;
@@ -189,21 +214,26 @@ strong {
 #third-content {
   background-color: var(--garnet-red);
 }
+
 #third-content img {
   max-width: 100%;
 }
+
 #third-content-text {
   margin-left: 5%;
   margin-right: 10%;
 }
+
 #third-content-text h1 {
   color: white;
   margin-top: 10%;
 }
+
 #third-content-text p {
   color: white;
   padding-right: 5%;
 }
+
 #application-requirements-button {
   background-color: black;
   width: fit-content;
@@ -214,9 +244,11 @@ strong {
   border: white;
   border-style: solid;
 }
+
 #application-requirements-button h2 {
   color: white;
 }
+
 #application-requirements-button a {
   text-decoration: none;
   color: white;
@@ -227,20 +259,24 @@ strong {
   background-color: #ececec;
   text-align: center;
 }
+
 #fourth-content section {
   width: 70%;
   margin: auto;
   text-align: center;
 }
+
 #fourth-content h1 {
   color: var(--garnet-red);
   text-align: center;
   font-size: xx-large;
   font-weight: bolder;
 }
+
 #fourth-content p {
   text-align: center;
 }
+
 #fourth-content h3 {
   display: inline-block;
   position: relative;
@@ -249,11 +285,13 @@ strong {
   padding: 5px;
   width: fit-content;
 }
+
 #fourth-content a {
   text-decoration: none;
   color: white;
   padding: 10px;
 }
+
 #fourth-content a:hover {
   background-color: white;
   color: var(--garnet-red);
@@ -268,15 +306,18 @@ strong {
   width: 70%;
   margin: auto;
 }
+
 #fifth-content section {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: xx-large;
 }
+
 #fifth-content h1 {
   color: var(--garnet-red);
   padding-bottom: 10px;
 }
+
 #fifth-content p {
   font-size: medium;
 }
@@ -287,21 +328,25 @@ strong {
   width: 70%;
   margin: auto;
 }
+
 #sixth-content section {
   margin: 8px;
   text-align: center;
 }
+
 #sixth-content img {
   display: block;
   margin: auto;
   width: 75%;
 }
+
 #sixth-content h2 {
   color: var(--garnet-red);
   font-size: medium;
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 #sixth-content p {
   padding-bottom: 50px;
   padding-left: 5px;
@@ -310,12 +355,15 @@ strong {
   margin-right: 5px;
   color: black;
 }
+
 #sixth-content a {
   text-decoration: none;
 }
+
 #sixth-content section:hover {
   box-shadow: 5px 5px 5px rgba(36, 36, 36, 0.5);
 }
+
 /* Seventh Content */
 
 #seventh-content {
@@ -324,10 +372,12 @@ strong {
   width: 70%;
   margin: auto;
 }
+
 #seventh-content section {
   color: white;
   font-size: x-large;
 }
+
 #seventh-content img {
   position: relative;
   top: -35px;
@@ -335,17 +385,20 @@ strong {
   width: 350;
   height: 350;
 }
+
 #seventh-content h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 5%;
 }
+
 #seventh-content p {
   margin-bottom: 5%;
   margin-left: 5%;
   font-size: medium;
   width: 80%;
 }
+
 #seventh-content h1 {
   background-color: var(--garnet-red);
   width: fit-content;
@@ -355,6 +408,7 @@ strong {
   margin-left: 5%;
   font-size: medium;
 }
+
 #seventh-content a {
   text-decoration: none;
   color: white;
@@ -371,12 +425,15 @@ footer {
 #top-footer section {
   margin-top: 20px;
 }
+
 #left-images {
   margin-left: 5%;
 }
+
 #right-images {
   margin-left: 70%;
 }
+
 #right-images img {
   padding-left: 4%;
 }
@@ -388,19 +445,24 @@ footer {
   margin-right: 10px;
   padding: 5px;
 }
+
 #middle-footer h2 {
   font-size: medium;
 }
+
 #middle-footer ul {
   list-style-type: none;
 }
+
 #middle-footer li {
   padding-bottom: 10px;
 }
+
 #middle-footer a {
   text-decoration: none;
   color: white;
 }
+
 #middle-footer a:hover {
   background-color: red;
 }
@@ -422,19 +484,23 @@ footer {
   font-size: small;
   width: 100%;
 }
+
 #bottom-footer ul {
   list-style: none;
   justify-content: center;
 }
+
 #bottom-footer li {
   padding-right: 10px;
 }
+
 #bottom-footer li::after {
   content: "            |";
   color: white;
   right: 10px;
   font-size: small;
 }
+
 #bottom-footer li:last-child::after {
   content: "";
 }
@@ -460,29 +526,37 @@ img {
   .columns {
     display: flex;
   }
+
   .one {
     flex: 1;
     flex-wrap: wrap;
   }
+
   .two {
     flex: 2;
   }
+
   .three {
     flex: 3;
   }
+
   .four {
     flex: 4;
   }
+
   #menu-icon {
     display: none;
   }
+
   #search {
     display: none;
   }
+
   #main-header {
     width: 70%;
     margin: auto;
   }
+
   #graduate-school-admissions {
     background-color: var(--garnet-red);
     max-width: 70%;
@@ -492,6 +566,7 @@ img {
     top: -50px;
     left: 10%;
   }
+
   #graduate-school-admissions h1 {
     color: white;
   }
@@ -534,15 +609,19 @@ img {
     margin-left: 40%;
     justify-content: center;
   }
+
   #fourth-content section {
     padding-top: 4px;
   }
+
   #third-content {
     padding-bottom: 5px;
   }
+
   #sixth-content {
     width: 100%;
   }
+
   #second-content {
     text-align: left;
   }
