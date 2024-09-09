@@ -24,18 +24,18 @@ body {
   margin-left: 20px;
 }
 #search-box {
-    position: absolute;
-    top: 25%;
-    right:15%;
-    padding-right: 10px;
-    border: white;
-    border-style: solid;
-    white-space: nowrap;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  padding-right: 10px;
+  border: white;
+  border-style: solid;
+  white-space: nowrap;
 }
 #search-box h2 {
-    color: white;
-    font-size: medium;
-   padding-right: 200px;
+  color: white;
+  font-size: medium;
+  padding-right: 200px;
 }
 
 /* Top Middle Heading Menu */
@@ -216,7 +216,7 @@ strong {
 }
 #application-requirements-button h2 {
   color: white;
-} 
+}
 #application-requirements-button a {
   text-decoration: none;
   color: white;
@@ -314,7 +314,7 @@ strong {
   text-decoration: none;
 }
 #sixth-content section:hover {
-  box-shadow: 5px 5px 5px rgba(36, 36, 36, 0.5); 
+  box-shadow: 5px 5px 5px rgba(36, 36, 36, 0.5);
 }
 /* Seventh Content */
 
@@ -370,7 +370,6 @@ footer {
 /* Top Footer */
 #top-footer section {
   margin-top: 20px;
-  
 }
 #left-images {
   margin-left: 5%;
@@ -504,19 +503,22 @@ img {
     flex-wrap: wrap;
     flex: 1;
   }
-  
-  #top-right-nav-list, #gateways-list, #search-box {
+
+  #top-right-nav-list,
+  #gateways-list,
+  #search-box {
     display: none;
   }
-  
 
-  #middle-footer-top, #middle-footer-middle {
+  #middle-footer-top,
+  #middle-footer-middle {
     display: flex;
     flex-wrap: wrap;
   }
 
-  #middle-footer-top .one, #middle-footer-middle .one {
-    flex-basis: 50%; 
+  #middle-footer-top .one,
+  #middle-footer-middle .one {
+    flex-basis: 50%;
     width: 50%;
     margin-bottom: 20px;
   }
@@ -527,7 +529,7 @@ img {
     padding-top: 10px;
     justify-content: center;
   }
-  
+
   #right-images {
     margin-left: 40%;
     justify-content: center;
@@ -544,5 +546,4 @@ img {
   #second-content {
     text-align: left;
   }
-  
 }
