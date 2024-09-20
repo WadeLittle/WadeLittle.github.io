@@ -72,15 +72,15 @@ html {
 
 }
 
-#main-nav  li {
+#main-nav li {
     list-style-type: none;
     text-align: center;
     padding-bottom: 5px;
     padding-top: 10px;
 }
 
-#main-nav  a {
-    flex:1;
+#main-nav a {
+    flex: 1;
     text-decoration: none;
     color: white;
     font-size: large;
@@ -89,26 +89,27 @@ html {
 #main-nav li:hover {
     background-color: var(--a-hover-color);
 }
+
 #nav-items {
     margin: 0;
 }
 
 /* Toggle Nav */
 #toggle-nav div {
-    width:25px;
-    height:2px;
-    background-color:black;
-    margin:6px 0;
-  }
-  
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
 /* Visibility */
 .hidden {
-    display:none;
-  }
-  
-  .hidden-small {
-    display:none;
-  }
+    display: none;
+}
+
+.hidden-small {
+    display: none;
+}
 
 
 /* About us */
@@ -187,8 +188,8 @@ footer h3 {
     color: black;
 }
 
-  
-  
+
+
 
 /* Larger Resolutions */
 @media only screen and (min-width: 600px) {
@@ -199,25 +200,27 @@ footer h3 {
     #saahil p {
         text-align: left;
     }
+
     #toggle-nav {
-        display:none;
-      }
-    
-      .hidden-small {
-        display:flex;
-      }
+        display: none;
+    }
+
+    .hidden-small {
+        display: flex;
+    }
 }
 
 
 /* Smaller Resolutions */
 @media only screen and (max-width: 600px) {
 
-.images {
-    display: block;
-    margin: auto;
-}
-#bottom-header {
-    padding-top:5px;
-    padding-bottom: 5px;
-}
+    .images {
+        display: block;
+        margin: auto;
+    }
+
+    #bottom-header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
