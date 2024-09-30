@@ -3,13 +3,16 @@ body {
     text-align: center;
     background-color: #8697c4;
 }
+
 #imageTable {
-   margin: auto;
+    margin: auto;
 }
+
 #imageTable td {
     padding: 20px;
 }
+
 img {
-    height:250px;
-    width:150px;
+    height: 250px;
+    width: 150px;
 }
