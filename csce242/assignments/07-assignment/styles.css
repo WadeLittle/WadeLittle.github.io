@@ -1,0 +1,35 @@
+:root {
+    --top: 0;
+    --left: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+}
+
+#outer {
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    
+    background-color: lightblue;
+}
+#inner {
+    background-color: black;
+    position: relative;
+    width: 400px;
+    height:400px;
+}
+.star {
+    position:absolute;
+    color:yellow;
+}
+
+
+
+#error-message {
+    color: red;
+}

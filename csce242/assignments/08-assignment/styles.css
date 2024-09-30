@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #8697c4;
+}
+#imageTable {
+   margin: auto;
+}
+#imageTable td {
+    padding: 20px;
+}
+img {
+    height:250px;
+    width:150px;
+}

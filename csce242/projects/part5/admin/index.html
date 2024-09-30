@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav id="top-header">
+            <ul class="columns">
+                <li>
+                    <h1>SidSoles</h1>
+                </li>
+                <li id="admin">
+                    <h2><a href="../admin/index.html">Admin</a></h2>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <header id="bottom-header">
+        <nav id="main-nav">
+            <div id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items" class="columns hidden-small">
+                <a href="../home/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../About_US/index.html">
+                    <li>About Us</li>
+                </a>
+                <a href="../shop/index.html">
+                    <li>Shop</li>
+                </a>
+                <a href="../Cart/index.html">
+                    <li>Cart</li>
+                </a>
+                <a href="../Contact_us/index.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="filler-and-login" class="columns">
+        <section id="filler">
+            <h1 class="title">Jordan 4 Retro White Thunder</h1>
+            <img class="stock-photo" src="../home/images/jordan-4-white-thunder.jpg">
+            <h3 class="sku">Sku: </h3>
+            <label for="size"></label>
+            <select name="size" id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <h3 class="price">Price:</h3>
+            <h3 class="condition">Condition:</h3>
+            <button class="atc-button">Add To Cart</button>
+        </section>
+        <section id="login">
+            <h1>Login</h1>
+            <form action="/action_page.php">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password"><br><br>
+                <button>Login </button>
+            </form>
+        </section>
+    </div>
+    <div id="create">
+        <!--Implement a Form that will create changes in the how does it look as you change it-->
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <footer>
+        <h3>Powered by Wade Little</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
