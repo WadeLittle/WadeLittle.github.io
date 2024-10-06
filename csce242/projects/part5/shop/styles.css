@@ -111,7 +111,8 @@ html {
 
 /* Shop Item */
 #shop-items {
-    background-color: var(--main-background-color);
+    background-image: url(../home/images/pexels-photo-8170944.jpg);
+    background-size: cover;
 }
 
 .shop-section {

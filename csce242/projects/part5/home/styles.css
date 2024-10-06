@@ -135,6 +135,7 @@ html {
 
 .top-picks img {
     max-width: 100%;
+    border-radius: 10%;
 }
 
 .picks {
