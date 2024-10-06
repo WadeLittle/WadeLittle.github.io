@@ -130,11 +130,13 @@ html {
 
 
 #left-side {
-    flex:1
-  }
-  #group-image {
-    flex:1;
+    flex: 1
 }
+
+#group-image {
+    flex: 1;
+}
+
 #left-side img {
     padding-top: 100px;
     padding-bottom: 80px;
@@ -143,10 +145,11 @@ html {
     height: auto;
     margin: auto;
 }
+
 #why {
     background-color: var(--main-div-color);
     margin: auto;
-    width:85%;
+    width: 85%;
     padding: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -186,6 +189,7 @@ html {
 #wade h2 {
     padding-left: 15px;
 }
+
 #wade p {
     padding-left: 15px;
     width: 90%;
@@ -197,10 +201,10 @@ html {
 }
 
 #right-section {
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: column;
-  }
+}
 
 
 /* Footer */
@@ -218,8 +222,8 @@ footer h3 {
 
 
 .images {
-   display: block;
-   margin: auto;
+    display: block;
+    margin: auto;
 }
 
 /*Typography */
@@ -236,6 +240,7 @@ footer h3 {
     .columns {
         display: flex;
     }
+
     .siding {
         display: flex;
     }
@@ -252,17 +257,19 @@ footer h3 {
         display: flex;
     }
 }
+
 @media screen and (min-width: 600px) and (max-width: 1500px) {
     .siding {
-      display: block;
+        display: block;
     }
-  }
-  @media screen and (min-width: 600px) and (max-width: 680px) {
+}
+
+@media screen and (min-width: 600px) and (max-width: 680px) {
     .images {
         width: 250px;
         height: 250px;
     }
-  }
+}
 
 /* Smaller Resolutions */
 @media only screen and (max-width: 600px) {
