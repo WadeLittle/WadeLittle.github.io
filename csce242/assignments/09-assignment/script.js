@@ -12,7 +12,6 @@ class Bird {
     get item() {
         const overallDiv = document.createElement("div");
         overallDiv.classList.add("bird");
-        overallDiv.classList.add("columns");
         
         const header = document.createElement("h3");
         header.innerHTML = this.type;  // Use `this.type`
