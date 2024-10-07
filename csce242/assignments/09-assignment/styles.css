@@ -1,0 +1,26 @@
+.bird {
+    background-color: skyblue;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    width:320px;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: right;
+    }
+    #bird-list {
+        display: flex;
+    }
+    .bird {
+        flex: 1;
+    }
+}
