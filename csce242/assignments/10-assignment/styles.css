@@ -1,0 +1,40 @@
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    color: pink;
+    text-align: center;
+}
+
+#flavors-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flavor-section {
+    margin: 10px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+
+}
+
+.name {
+    background-color: rgba(0, 0, 0, .5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
