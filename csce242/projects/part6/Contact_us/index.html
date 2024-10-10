@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav id="top-header">
+            <ul class="columns">
+                <li>
+                    <h1>SidSoles</h1>
+                </li>
+                <li id="admin">
+                    <h2><a href="../admin/index.html">Admin</a></h2>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <header id="bottom-header">
+        <nav id="main-nav">
+            <div id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items" class="columns hidden-small">
+                <a href="../home/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../About_US/index.html">
+                    <li>About Us</li>
+                </a>
+                <a href="../shop/index.html">
+                    <li>Shop</li>
+                </a>
+                <a href="../Cart/index.html">
+                    <li>Cart</li>
+                </a>
+                <a href="../Contact_us/index.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <h1>Contact Us</h1>
+        <div class="columns">
+            <section id="contact-form">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </section>
+            <section id="contact-info">
+                <h2>How to Reach Us</h2>
+                <h2>Sid Soles</h2>
+                <h3>Store Phone Number: (919)-758-3774</h3>
+                <h3>Store Email: sidsoles@gmail.com</h3>
+                <img src="sid-logo.jpg">
+            </section>
+        </div>
+    </div>
+    <footer>
+        <h3>Powered by Wade Little</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
