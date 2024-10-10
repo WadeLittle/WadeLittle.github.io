@@ -1,5 +1,4 @@
-{
-    "sneakers": [
+ [
         {
             "id": 1,
             "title": "Jordan 4 Retro White Thunder",
@@ -82,4 +81,3 @@
             "condition": "Brand New"
         }
     ]
-}

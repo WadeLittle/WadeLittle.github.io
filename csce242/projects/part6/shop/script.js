@@ -9,10 +9,11 @@ document.querySelector("#toggle-nav").onclick = () => {
 /* JSON parsing */
 
 const getShoes = async() => {
-    const url = "C:\Users\wdlit\OneDrive\Desktop\CSCE242\WadeLittle.github.io\csce242\projects\part6\shoe.json";
+    const url = "https://wadelittle.github.io/csce242/projects/shoe.json";
 
     try {
         const response = await fetch(url);
+        console.log(response.json());
         return response.json();
     } catch(error) {
         console.log(error);
@@ -22,7 +23,7 @@ const getShoes = async() => {
 const showShoes = async() => {
     const shoes = await getShoes();
 
-    shoes.forEach((shoe) => {
+    shoes.forEach(shoe => {
         document.getElementById("shop-items").append(getShoeSection(shoe));
         
     });
@@ -37,6 +38,45 @@ const getShoeSection = (shoe) => {
     h1.classList.add("title");
     section.append(h1);
 
+    const image = document.createElement("img");
+    image.src = `../images/${shoe.image}`;
+    image.classList.add("stock-photo");
+    section.append(image);
+
+    const sku = document.createElement("h3");
+    sku.innerHTML = `SKU: ${shoe.sku}`;
+    sku.classList.add("sku");
+    section.append(sku);
+
+    const label = document.createElement("label");
+    label.setAttribute("for", "size");
+    section.append(label);
+
+    const select = document.createElement("select");
+    select.name = "size";
+    select.id = "size";
+    shoe.sizes.forEach(size => {
+       const option = document.createElement("option");
+        option.value = size;
+        select.append(option);
+    })
+
+    const price = document.createElement("h3");
+    price.innerHTML = `Price: ${shoe.price}`;
+    price.classList.add("price");
+    section.append("price");
+
+
+    const condition = document.createElement("h3");
+    condition.innerHTML = `Condition: ${shoe.condition}`;
+    condition.classList.add("condition");
+    section.append("condition");
+
+
+    const button = document.createElement("button");
+    button.innerHTML = "Add to Cart";
+    button.classList.add("atc-button");
+    section.append("button");
 
 
 
@@ -44,5 +84,5 @@ const getShoeSection = (shoe) => {
 }
 
 
-showShoes()
+showShoes();
 
