@@ -13,7 +13,6 @@ const getShoes = async() => {
 
     try {
         const response = await fetch(url);
-        console.log(response.json());
         return response.json();
     } catch(error) {
         console.log(error);
@@ -39,7 +38,7 @@ const getShoeSection = (shoe) => {
     section.append(h1);
 
     const image = document.createElement("img");
-    image.src = `../images/${shoe.image}`;
+    image.src = `../../images/${shoe.image}`;
     image.classList.add("stock-photo");
     section.append(image);
 
@@ -58,25 +57,27 @@ const getShoeSection = (shoe) => {
     shoe.sizes.forEach(size => {
        const option = document.createElement("option");
         option.value = size;
+        option.innerHTML = size;
         select.append(option);
-    })
+    });
+    section.append(select);
 
     const price = document.createElement("h3");
     price.innerHTML = `Price: ${shoe.price}`;
     price.classList.add("price");
-    section.append("price");
+    section.append(price);
 
 
     const condition = document.createElement("h3");
     condition.innerHTML = `Condition: ${shoe.condition}`;
     condition.classList.add("condition");
-    section.append("condition");
+    section.append(condition);
 
 
     const button = document.createElement("button");
     button.innerHTML = "Add to Cart";
     button.classList.add("atc-button");
-    section.append("button");
+    section.append(button);
 
 
 
