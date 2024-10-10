@@ -1,100 +1,232 @@
 :root {
-  --primary: coral;
-  --secondary: cornflowerblue;
+  --main-background-color: #b8c4d2;
+  --main-div-color: #404757;
+  --bottom-header-color: #404757;
+  --a-hover-color: #2E3944;
 }
 
-/* Structure */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: azure;
+  background-color: var(--main-background-color);
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation */
-#main-nav ul {
-  padding-left: 0px;
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#main-header {
+  background-color: var(--main-div-color);
+  display: flex;
+  position: relative;
+  padding: 0;
+}
+
+
+/* Top Header menu */
+#top-header {
+  margin: auto;
+}
+
+#top-header ul {
+  padding: 0;
+}
+
+#top-header li {
   list-style-type: none;
 }
 
+#main-header h1 {
+  top: 0;
+  margin: auto;
+  text-align: center;
+
+}
+
+#admin h2 {
+  position: absolute;
+  right: 0%;
+  top: 1%;
+  font-size: medium;
+  padding: 0;
+  margin: 0;
+  padding-right: 5px;
+}
+
+/* Bottom Header */
+#bottom-header {
+  background-color: var(--bottom-header-color);
+  margin-top: 0;
+
+}
+
+#main-nav {
+  width: 70%;
+  margin: auto;
+
+}
+
 #main-nav li {
-  background: var(--secondary);
-  padding: 10px;
-  margin: 2px 0;
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 #main-nav a {
+  flex: 1;
   text-decoration: none;
-  color: blanchedalmond;
+  color: white;
+  font-size: large;
 }
 
-/* Hamburger Menu */
-#nav-toggle div {
-  width: 35px;
-  height: 5px;
-  background-color: var(--primary);
+#main-nav li:hover {
+  background-color: var(--a-hover-color);
+}
+
+#nav-items {
+  margin: 0;
+}
+
+/* Toggle Nav */
+#toggle-nav div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
   margin: 6px 0;
 }
 
-/* Typography */
-#main-nav-items {
-  font-size: 1.2em;
-}
-
+/* Visibility */
 .hidden {
   display: none;
 }
 
-.hide {
-  visibility: hidden;
+.hidden-small {
+  display: none;
 }
 
-#square {
-  --x: 100px;
-  width: var(--x);
-  height: var(--x);
-  margin-top: 10px;
-  background-color: blueviolet;
+
+/*Top-Pick Shoes */
+.picks-div {
+  background-color: var(--main-div-color);
+  padding-top: 5px;
+  color: white;
 }
 
-.drink {
-  background: #fff;
-  padding: 5px;
-  margin: 5px;
-}
-
-h3 {
+.picks-div h1 {
   text-align: center;
 }
 
-.drink img {
-  max-width: 40%;
-  display: block;
+.top-picks {
+  background-color: var(--main-background-color);
+  margin: 20px;
+  padding: 10px;
+  color: black;
+  width: 300px;
+  height:auto;
+}
+
+.top-picks h2 {
+  text-align: center;
+}
+
+.top-picks img {
+  max-width: 100%;
+  border-radius: 10%;
+}
+
+.picks {
+  background-color: var(--main-div-color);
+  flex-wrap: wrap;
+}
+
+
+
+/*Parralax */
+.parallax {
+  height: 100%;
+  opacity: 0.65;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* So we can center content inside */
+}
+
+.first {
+  background-image: url("https://media.istockphoto.com/id/1392841047/photo/happy-cinco-de-mayo-with-two-lime-margarita-glasses-on-a-colorful-slated-wood-background.jpg?s=612x612&w=0&k=20&c=ELMLtP62FIWAe9rXSB4j-wrifktYdmZ1vfOlhqfUgPc=");
+}
+
+.second {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/024/058/605/non_2x/a-still-life-of-colorful-glasses-and-bottles-of-tequila-and-mezcal-a-mexican-spirit-creates-a-beautiful-bokeh-effect-ai-generated-free-photo.jpg");
+}
+
+.third {
+  background-image: url("https://i.pinimg.com/originals/7c/9c/c7/7c9cc7304249ee235bcc032f32d6b5a7.jpg");
+}
+
+footer {
+  background-color: var(--main-div-color);
   margin: auto;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  font-size: small;
+}
+
+footer h3 {
+  text-align: center;
+  margin: 2px;
+}
+
+/* Typography */
+.parallax-text {
+  text-align: center;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  color: black;
+  font-size: .1px;
+}
+
+#admin a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Larger Resolutions */
-@media (min-width: 900px) {
-  #main-nav-items li {
-    flex: 1;
-  }
-
-  #main-nav-items a {
-    border-bottom: 2px solid transparent;
-  }
-
-  #main-nav-items a:hover {
-    border-bottom: 2px solid var(--primary);
-  }
-
-  #nav-toggle {
-    display: none;
-  }
-
+@media only screen and (min-width: 600px) {
   .columns {
-    display: flex;
-    flex-wrap: wrap;
+      display: flex;
   }
 
-  .drink {
-    flex: 30%;
+  #toggle-nav {
+      display: none;
+  }
+
+  .hidden-small {
+      display: flex;
+  }
+
+}
+
+/* Smaller Resolutions */
+@media only screen and (max-width: 600px) {
+  #bottom-header {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+      background-attachment: scroll;
   }
 }
