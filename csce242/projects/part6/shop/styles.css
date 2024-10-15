@@ -118,8 +118,8 @@ html {
 
 .shop-section {
     background-color: var(--main-div-color);
-    flex: 0 1 calc(33.3% -20px);
-    padding: 50px;
+    flex-wrap: wrap;
+    width: 30%;
     box-sizing: border-box;
     margin-bottom: 20px;
     text-align: center;
@@ -184,7 +184,7 @@ footer h3 {
 
 @media (max-width: 900px) {
     .shop-section {
-        flex: 0 1 calc(50% - 20px);
+        width:100%;
         /* 2 sections per row for screens smaller than 900px */
     }
 }
@@ -206,7 +206,14 @@ footer h3 {
     }
 
     .shop-section {
-        flex: 0 1 100%;
+        width:100%;
+        margin-left: 0;
         /* Full width for smaller screens */
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1220px) {
+    .shop-section {
+        width: 45%;
     }
 }
