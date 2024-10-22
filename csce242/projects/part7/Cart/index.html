@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav id="top-header">
+            <ul class="columns">
+                <li>
+                    <h1>SidSoles</h1>
+                </li>
+                <li id="admin">
+                    <h2><a href="../admin/index.html">Admin</a></h2>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <header id="bottom-header">
+        <nav id="main-nav">
+            <div id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items" class="columns hidden-small">
+                <a href="../home/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../About_US/index.html">
+                    <li>About Us</li>
+                </a>
+                <a href="../shop/index.html">
+                    <li>Shop</li>
+                </a>
+                <a href="../Cart/index.html">
+                    <li>Cart</li>
+                </a>
+                <a href="../Contact_us/index.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="content columns">
+        <section id="checkout-info">
+            <div class="container ">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </section>
+        <section id="cart-info">
+            <h2>Cart</h2>
+            <section class="cart-item columns">
+                <section class="cart-image">
+                    <img src="../../images/jordan-4-white-thunder.jpg">
+                </section>
+                <section class="cart-data">
+                    <h3 class="item-name">Jordan 4</h3>
+                    <h3 class="cart-size">Size:</h3>
+                    <h3 class="cart-condition">Condition:
+                    </h3>
+                    <h3 class="cart-price">$170</h3>
+                    <button class="remove-button">X </button>
+                </section>
+            </section>
+            <section class="cart-item columns">
+                <section class="cart-image">
+                    <img src="../../images/jordan-4-white-thunder.jpg">
+                </section>
+                <section class="cart-data">
+                    <h3 class="item-name">Jordan 4</h3>
+                    <h3 class="cart-size">Size:</h3>
+                    <h3 class="cart-condition">Condition:
+                    </h3>
+                    <h3 class="cart-price">$170</h3>
+                    <button class="remove-button">X </button>
+                </section>
+            </section>
+
+          
+            <h1 id="total-price">Total:</h1>
+            <button id="checkout-button">Checkout</button>
+        </section>
+    </div>
+
+
+
+
+
+    <footer>
+        <h3>Powered by Wade Little</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
